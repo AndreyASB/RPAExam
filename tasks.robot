@@ -74,9 +74,10 @@ Fill the form
 
 *** Keywords ***
 Open the robot order website
-    ${website}=    Get Secret    website
-    Log    ${website}
-    Open Available Browser     https://robotsparebinindustries.com/#/robot-order
+    #${website}=    Get Secret    website
+    
+    #Open Available Browser     ${website}[path]
+    Open Available Browser    https://robotsparebinindustries.com/#/robot-order
 
 *** Tasks ***
 Order robots from RobotSpareBin Industries Inc
